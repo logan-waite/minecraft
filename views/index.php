@@ -30,6 +30,12 @@
                                         </span>
                                     </div>
                                 </div>
+                                <div class="col-sm-6">
+                                    <form action='../controllers/server_controller.php' method="post">
+                                        <?=$server_action_button?>
+                                        <!-- <button class = "btn btn-lg btn-block btn-info disabled"> Update Server </button> -->
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

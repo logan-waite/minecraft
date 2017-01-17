@@ -11,4 +11,17 @@ function start_server() {
         return "success";
     }
 }
+
+function stop_server() {
+    $output = "";
+    $failed = 1;
+    exec("stop", $output, $failed);
+
+    if ($failed) {
+        return "Unable to stop server." + var_dump($output);
+    }
+    else {
+        return "success";
+    }
+}
  ?>

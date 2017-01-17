@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
         echo start_server();
     }
     else if ($_POST['submit'] == 'stop') {
-        echo "stopping";
+        echo stop_server();
     }
     else {
         echo ":(";

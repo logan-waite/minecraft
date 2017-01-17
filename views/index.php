@@ -12,6 +12,7 @@
 
         <!-- Local content -->
         <link rel="stylesheet" href="../resources/stylesheet.css" type="text/css">
+        <script src="../resources/javascript.js"></script>
     </head>
     <body>
         <div class="container-fluid">
@@ -31,7 +32,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <form action='../controllers/server_controller.php' method="post">
+                                    <form id='ServerActions' action='../controllers/server_controller.php' method="post">
                                         <?=$server_action_button?>
                                         <!-- <button class = "btn btn-lg btn-block btn-info disabled"> Update Server </button> -->
                                     </form>

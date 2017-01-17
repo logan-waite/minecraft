@@ -17,12 +17,12 @@
         // echo "</pre>";
         $status_class = 'status-running';
         $status_message = 'Running';
-        $server_action_button = "<button type='submit' name='submit' value='stop' class='btn btn-lg btn-block btn-danger'> Stop Server </button>";
+        $server_action_button = "<button type='submit' id='SubmitButton' name='submit' value='stop' class='btn btn-lg btn-block btn-danger'> Stop Server </button>";
     }
     else {
         $status_class = 'status-down';
         $status_message = 'Down';
-        $server_action_button = "<button type='submit' name='submit' value='stop' class='btn btn-lg btn-block btn-success'> Start Server </button>";
+        $server_action_button = "<button type='submit' id='SubmitButton' name='submit' value='start' class='btn btn-lg btn-block btn-success'> Start Server </button>";
     }
 
  ?>

@@ -24,9 +24,9 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <div class='status-circle'>
+                                    <div class='status-circle <?=$status_class?>'>
                                         <span>
-                                            Running
+                                            <?=$status_message?>
                                         </span>
                                     </div>
                                 </div>

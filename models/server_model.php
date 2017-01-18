@@ -1,8 +1,9 @@
 <?php
 
-global $script_path = "/var/www/html/minecraft_server/minecraft//resources/minecraft_server_script.sh";
+$script_path = "/var/www/html/minecraft_server/minecraft//resources/minecraft_server_script.sh";
 
 function start_server() {
+    global $script_path;
     $output = "";
     $failed = 1;
     exec("sh {$script_path} start", $output, $failed);
@@ -16,6 +17,7 @@ function start_server() {
 }
 
 function stop_server() {
+    global $script_path;
     $output = "";
     $failed = 1;
     exec("sh {$script_path} stop", $output, $failed);

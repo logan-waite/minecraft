@@ -5,13 +5,14 @@
     $status_message = "";
     $server_action_button = "";
     /******************************************/
+    $script_path = "/var/www/html/minecraft_server/minecraft//resources/minecraft_server_script.sh"
 
 
     $no_results = 1;
     $running_processes = [];
-    exec("ps a | grep 'minecraft'", $running_processes, $no_results);
+    $result = exec("sh {$script_path} status", $running_processes, $no_results);
 
-    if(!$no_results) {
+    if($result == "minecraft_server.jar is running.") {
         // echo "<pre>";
         // var_dump($running_processes);
         // echo "</pre>";

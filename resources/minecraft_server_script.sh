@@ -35,7 +35,7 @@ as_user() {
   if [ "$ME" = "$USERNAME" ] ; then
     bash -c "$1"
   else
-    su - "$USERNAME" -c "$1"
+    su "$USERNAME" -c "$1"
   fi
 }
 

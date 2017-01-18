@@ -1,6 +1,6 @@
 <?php
 
-$script_path = "/var/www/html/minecraft_server/minecraft//resources/minecraft_server_script.sh";
+$script_path = "/var/www/html/minecraft_server/minecraft/resources/minecraft_server_script.sh";
 
 function start_server() {
     global $script_path;

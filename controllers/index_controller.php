@@ -5,7 +5,7 @@
     $status_message = "";
     $server_action_button = "";
     /******************************************/
-    $script_path = "/var/www/html/minecraft_server/minecraft//resources/minecraft_server_script.sh"
+    $script_path = "/var/www/html/minecraft_server/minecraft//resources/minecraft_server_script.sh";
 
 
     $no_results = 1;

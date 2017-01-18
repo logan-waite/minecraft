@@ -18,9 +18,9 @@
 SERVICE='minecraft_server.jar'
 SCREENNAME='minecraft_server'
 OPTIONS='nogui'
-USERNAME='minecraft'
+USERNAME='logan'
 WORLD='world'
-MCPATH='/home/minecraft'
+MCPATH='/home/logan/minecraft'
 BACKUPPATH='/media/remote.share/minecraft.backup'
 MAXHEAP=2048
 MINHEAP=1024

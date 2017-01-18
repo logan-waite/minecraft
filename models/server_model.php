@@ -3,7 +3,7 @@
 function start_server() {
     $output = "";
     $failed = 1;
-    exec("java -Xmx1024M -Xms1024M -jar /home/logan/minecraft/minecraft_server.jar nogui", $output, $failed);
+    exec("screen -d -m java -Xmx1024M -Xms1024M -jar /home/logan/minecraft/minecraft_server.jar nogui", $output, $failed);
 
     if ($failed) {
         return "Unable to start server." + var_dump($output);

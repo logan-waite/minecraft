@@ -6,7 +6,7 @@ function start_server() {
     global $script_path;
     $output = "";
     $failed = 1;
-    exec("sh {$script_path} start", $output, $failed);
+    exec("sudo sh {$script_path} start", $output, $failed);
 
     if ($failed) {
         return "Unable to start server." + var_dump($output);
@@ -21,7 +21,7 @@ function stop_server() {
     $output = "";
     $failed = 1;
 
-    exec("sh {$script_path} stop", $output, $failed);
+    exec("sudo sh {$script_path} stop", $output, $failed);
 
     if ($failed) {
         return "Unable to stop server." + var_dump($output);
